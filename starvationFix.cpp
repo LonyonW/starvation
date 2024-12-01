@@ -20,7 +20,9 @@ struct Proceso {
 
 std::vector<std::shared_ptr<Proceso>> procesos = {
     std::make_shared<Proceso>(1, 1, 0),    // Alta prioridad, llega en el milisegundo 0
-    std::make_shared<Proceso>(2, 2, 1000), // Prioridad media, llega en el milisegundo 1000
+    std::make_shared<Proceso>(2, 2, 1000),
+    std::make_shared<Proceso>(4, 2, 1000),
+    std::make_shared<Proceso>(5, 2, 1000), // Prioridad media, llega en el milisegundo 1000
     std::make_shared<Proceso>(3, 3, 0)     // Prioridad baja, llega en el milisegundo 0
 };
 
